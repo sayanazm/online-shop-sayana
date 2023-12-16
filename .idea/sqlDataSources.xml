@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="85c3dec8-0c01-4adb-a364-1a791a78929d" name="dbname@db Mapping">
+      <data-sources db="c0d65dfa-e3c9-4b75-b144-5d69fd73582e" ddl="eab8b328-9579-4f85-a738-d0702f132f84" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="eab8b328-9579-4f85-a738-d0702f132f84" />
+          <option name="name" value="dbname@db (DDL)" />
+          <option name="dbmsName" value="POSTGRES" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
