@@ -5,14 +5,14 @@
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://db:5431/postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://db:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="dbname@db" uuid="c0d65dfa-e3c9-4b75-b144-5d69fd73582e">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://db:5432/db</jdbc-url>
+      <jdbc-url>jdbc:postgresql://db:5432/dbname</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
