@@ -33,19 +33,21 @@ $password_repeat = $_POST['psw-repeat'];
             $errors['password'] = "Пароли не совпадают";
         }
     }
-
+$password = password_hash($password, PASSWORD_DEFAULT);
 
     if (empty($errors)) {
         $pdo = new PDO("pgsql:host=db;port=5432;dbname=postgres", "dbuser", "dbpwd");
         $statement = $pdo->prepare("INSERT INTO users (name, email, password) VALUES (:name, :email, :password)");
         $statement->execute(['name' => $name, 'email' => $email, 'password' => $password]);
 
+        require_once "./get_login.php";
 //        $statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
 //        $statement->execute(['email' => $email]);
 //        $data = $statement->fetch(PDO::FETCH_ASSOC);
 //        print_r($data);
+    } else {
+        require_once "./get_registrate.php";
     }
 
-    require_once "./get_registrate.php";
 ?>
 
